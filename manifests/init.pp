@@ -13,7 +13,7 @@ class n (
   }
 
   file { $n::params::file:
-    mode    => 755,
+    mode    => '755',
     require => Exec['install-n'],
   } ->
 
